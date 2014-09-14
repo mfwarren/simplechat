@@ -25,8 +25,8 @@
 		525E5BCF1974E3A000FACEEA /* SenderBuddyDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E5BCE1974E3A000FACEEA /* SenderBuddyDataManager.swift */; };
 		525E5BD31974E3E900FACEEA /* Buddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E5BD21974E3E900FACEEA /* Buddy.swift */; };
 		525E5BD51974E3F700FACEEA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E5BD41974E3F700FACEEA /* Message.swift */; };
-		528A14941949517900ADD2A3 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528A14931949517900ADD2A3 /* CloudKit.framework */; };
 		52AE675B1947CC4C005C8CD0 /* CloudManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AE675A1947CC4C005C8CD0 /* CloudManager.swift */; };
+		C14B199919BFF38300F422E5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14B199819BFF38300F422E5 /* CloudKit.framework */; };
 		E339B0C3BB9A48068B68F394 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76954E9DFB6D4188A844B329 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -65,10 +65,10 @@
 		525E5BCE1974E3A000FACEEA /* SenderBuddyDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderBuddyDataManager.swift; sourceTree = "<group>"; };
 		525E5BD21974E3E900FACEEA /* Buddy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buddy.swift; sourceTree = "<group>"; };
 		525E5BD41974E3F700FACEEA /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		528A14931949517900ADD2A3 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		52AE67551947C761005C8CD0 /* SimpleChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SimpleChat.entitlements; sourceTree = "<group>"; };
 		52AE675A1947CC4C005C8CD0 /* CloudManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudManager.swift; sourceTree = "<group>"; };
 		76954E9DFB6D4188A844B329 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C14B199819BFF38300F422E5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				528A14941949517900ADD2A3 /* CloudKit.framework in Frameworks */,
 				E339B0C3BB9A48068B68F394 /* libPods.a in Frameworks */,
+				C14B199919BFF38300F422E5 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,6 @@
 		520FB04B1946B83000019862 = {
 			isa = PBXGroup;
 			children = (
-				528A14931949517900ADD2A3 /* CloudKit.framework */,
 				520FB0561946B83000019862 /* SimpleChat */,
 				520FB06C1946B83000019862 /* SimpleChatTests */,
 				520FB0551946B83000019862 /* Products */,
@@ -200,6 +199,7 @@
 		F5970B68BB2C4D2C8511AB9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C14B199819BFF38300F422E5 /* CloudKit.framework */,
 				76954E9DFB6D4188A844B329 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -256,7 +256,7 @@
 				TargetAttributes = {
 					520FB0531946B83000019862 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = G4CBL4DT2N;
+						DevelopmentTeam = 37CQG38MD8;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -489,7 +489,7 @@
 				INFOPLIST_FILE = SimpleChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9fd48515-8b07-4a87-8004-3c17bbba822e";
+				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "SimpleChat/SimpleChat-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -509,7 +509,7 @@
 				INFOPLIST_FILE = SimpleChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "9fd48515-8b07-4a87-8004-3c17bbba822e";
+				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "SimpleChat/SimpleChat-Bridging-Header.h";
 			};
